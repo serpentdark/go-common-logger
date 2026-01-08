@@ -12,7 +12,7 @@ A Go package for common logging, specifically for the Gin framework with OpenTel
 ## Installation
 
 ```bash
-go get github.com/serpentdark/go-common-logger.git
+go get github.com/serpentdark/go-common-logger
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ go get github.com/serpentdark/go-common-logger.git
 ### Importing the package
 
 ```go
-import "github.com/serpentdark/go-common-logger.git/logger"
+import "github.com/serpentdark/go-common-logger/logger"
 ```
 
 ### Using LoggingMiddleware in Gin

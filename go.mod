@@ -1,4 +1,4 @@
-module github.com/serpentdark/go-common-logger.git
+module github.com/serpentdark/go-common-logger
 
 go 1.25.5
 
