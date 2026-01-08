@@ -1,4 +1,4 @@
-module gitlab.com/zero-to-one/nayoo/utils/go-common-logger.git
+module github.com/serpentdark/go-common-logger.git
 
 go 1.25.5
 
