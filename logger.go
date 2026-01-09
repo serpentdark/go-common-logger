@@ -2,7 +2,6 @@ package logger
 
 import (
 	"bytes"
-	"context"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -58,10 +57,7 @@ func LogDebug(dbg DebugData) {
 	fmt.Fprintln(os.Stderr, string(jsonBytes))
 }
 
-func LogDebugMessage(ctx context.Context, componentName, message, status, level string) {
-	// Extract traceID from context like LoggingMiddleware does
-	span := trace.SpanFromContext(ctx)
-	traceID := span.SpanContext().TraceID().String()
+func LogDebugMessage(traceID, componentName, message, status, level string) {
 
 	// Get caller filename and line number (skip 2 levels: LogDebugMessage -> LogDebugFromContext -> actual caller)
 	_, filename, line, _ := runtime.Caller(2)
